@@ -19,9 +19,3 @@ This project is a multi-step registration form built using HTML, CSS, and JavaSc
 3. **Fill Out Data:** Fill out the registration form with the requested information at each step, ensuring to validate each input before proceeding.
 
 4. **Complete Registration:** After filling out all the steps, users will see a successful registration confirmation.
-
-## Contribution
-
-Contributions and improvement suggestions are always welcome. If you'd like to contribute to the development of this project, please create a new branch, make your changes, and submit a pull request.
-
-Thank you for using dccl--javascript-multi-step-register. We hope it proves beneficial for the development of your web applications!

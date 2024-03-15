@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Multistep Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="background-bottom-right"></div>
+      <div class="background-top-left"></div>
+
+      <div class="register-wrapper">
+        <!-- form input -->
+        <form class="form" id="user-data">
+          <header>
+            <h1>Register</h1>
+          </header>
+          <section class="form-section">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Input your name"
+              />
+              <span class="error-message" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@gmail.com"
+              />
+              <span class="error-message" id="email-error"></span>
+            </div>
+            <button id="btnInputData" class="btn-primary" type="submit">
+              Continue
+            </button>
+          </section>
+        </form>
+        <!-- end form input -->
+
+        <!-- form select -->
+        <form class="form hide" id="choose-topics">
+          <header>
+            <h1>Which topics are you interested in?</h1>
+          </header>
+          <section class="form-section">
+            <div class="form-group topics">
+              <label class="hidden-checkbox">
+                <div class="choose-topic">
+                  <input
+                    type="checkbox"
+                    name="software_development"
+                    value="Software
+                  Development"
+                  />
+                  Software Development
+                </div>
+              </label>
+              <label class="hidden-checkbox">
+                <div class="choose-topic">
+                  <input
+                    type="checkbox"
+                    name="user_experience"
+                    value="User
+                  Experience"
+                  />
+                  User Experience
+                </div>
+              </label>
+              <label class="hidden-checkbox">
+                <div class="choose-topic">
+                  <input
+                    type="checkbox"
+                    name="graphic_design"
+                    value="Graphic Design"
+                  />
+                  Graphic Design
+                </div>
+              </label>
+            </div>
+
+            <button id="btn-choose-topics" class="btn-primary" type="submit">
+              Continue
+            </button>
+          </section>
+        </form>
+        <!-- end form select -->
+
+        <!-- summary -->
+
+        <div class="summary hide" id="summary">
+          <header>
+            <h1>Summary</h1>
+          </header>
+          <section class="form-section">
+            <div class="user-data">
+              <p>Name: <span>---</span></p>
+              <p>Email: <span>---</span></p>
+            </div>
+
+            <div>
+              <header>
+                <h2>Topics:</h2>
+              </header>
+              <ul>
+                <li>User Experience</li>
+                <li>Graphic Design</li>
+              </ul>
+            </div>
+
+            <button id="btn-summary" class="btn-primary" type="submit">
+              Confirm
+            </button>
+          </section>
+        </div>
+
+        <!-- end summary -->
+      </div>
+      <div class="steps">
+        <p>Step 1 of 3</p>
+        <div class="circles">
+          <span class="circle active">
+            <span class="active-bg"></span>
+          </span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
